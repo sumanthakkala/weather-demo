@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { CityType } from "./types";
 import { CitySelector, ForecastDisplay } from "./components";
@@ -86,6 +85,26 @@ function App() {
           </AppWeatherContext.Provider>
         </>
       )}
+      <div className="m-5">
+        <p>
+          This is a demo app to display weather conditions requested by{" "}
+          <a href="https://agencyanalytics.com/" target={"_blank"}>
+            Agency Analytics
+          </a>{" "}
+          for hiring purposes. |{" "}
+          <a
+            href="https://github1s.com/sumanthakkala/weather-demo"
+            target={"_blank"}
+          >
+            Click here
+          </a>{" "}
+          to view repository. |{" "}
+          <a href="https://sumanthakkala.work" target={"_blank"}>
+            Click here
+          </a>{" "}
+          to visit portfolio.
+        </p>
+      </div>
     </div>
   );
 }
