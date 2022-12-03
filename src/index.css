@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #eef6fb !important;
+}
+
+body,
+html {
+  font-family: "JTMarnie" !important;
+}
+
+.App {
+  margin: auto;
+  max-width: 800px;
+}
+
+@font-face {
+  font-family: "JTMarnie";
+  src: local("JTMarnie"), url("./fonts/JTMarnie-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JTMarnie-Bold";
+  src: local("JTMarnie-Bold"),
+    url("./fonts/JTMarnie-Bold.otf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "KuunariBold";
+  src: local("KuunariBold"), url("./fonts/KuunariBold.otf") format("truetype");
+  font-weight: bold;
+}
+
+.bg-light-blue {
+  background-color: #eef6fb;
+}
+
+.bold-blue-font {
+  font-family: "JTMarnie-Bold";
+  color: #5fb0e8;
+}
+
+.city-text {
+  font-size: x-large;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.temperature-text {
+  font-family: "KuunariBold";
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.spinner {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 7px solid white;
+  border-radius: 50%;
+  border-top-color: #5fb0e8;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
